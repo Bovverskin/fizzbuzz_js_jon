@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <title>FizzBuzz</title>
+</head>
+
+
+<body background="./images/test_image.jpg">
+
+    <div class="max-w-sm mx-auto rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4 mx-auto">
+                <div class="mx-auto text-purple font-bold text-3xl mb-2 "> Fizz Buzz Description</div>
+            <p class="mx-auto text-red text-2xl">
+                    Fizz buzz is a group word game for children to teach them about division. 
+                    Players take turns to count incrementally, replacing any number divisible by three with the word "fizz", any number divisible by five with the word "buzz", and any number divisible by fifteen with the word "fizzbuzz".  
+                    Here is a simple calculator which will tell you whether that number is a "fizz", a "buzz" or a "fizzbuzz".  Simply input your number and hit the "Push Me" button.
+            </p>
+            </div>
+        </div>
+        <div class="mx-auto px6 py-4">
+        </div>
+    
+    <input type="submit" value="Push Me" id="button" input class="flex mx-auto border-b-4 border-purple border-solid items-center justify-center h-12 w-24 bg-red rounded-full text-center content-center">
+    <input type="text" placeholder="Number" id="value" input class ="flex mx-auto border-b-4 border-purple items-center justify-center h-12 w-24 bg-red rounded-full text-center"> 
+    <div id="display_answer" placeholder="Answer" input class = "flex mx-auto border-b-4 border-purple items-center justify-center h-24 w-48 bg-red rounded-full text-center"></div>
+
+    <script src="js/fizz-buzz.js"></script>
+        <script>
+            document.addEventListener( 'DOMContentLoaded', () => {
+            let button = document.getElementById('button')
+            let displayDiv = document.getElementById('display_answer')
+            button.addEventListener('click', () =>{
+                let value = document.getElementById('value').value
+                let fizzBuzz = new FizzBuzz
+                let result = fizzBuzz.check(value)
+                displayDiv.innerHTML = result;
+            })
+        })
+        </script>
+</body>
+</html>

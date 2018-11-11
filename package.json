@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "e2e_training_wheels": "0.0.15"
+    "e2e_training_wheels": "0.0.15",
+    "tailwindcss": "^0.7.2"
   },
   "scripts": {
     "test": "npm run features && npm run specs",

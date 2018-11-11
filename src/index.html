@@ -9,11 +9,24 @@
 </head>
 
 
-<body>
+<body background="./images/test_image.jpg">
+
+    <div class="max-w-sm mx-auto rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4 mx-auto">
+                <div class="mx-auto text-purple font-bold text-3xl mb-2 "> Fizz Buzz Description</div>
+            <p class="mx-auto text-red text-2xl">
+                    Fizz buzz is a group word game for children to teach them about division. 
+                    Players take turns to count incrementally, replacing any number divisible by three with the word "fizz", any number divisible by five with the word "buzz", and any number divisible by fifteen with the word "fizzbuzz".  
+                    Here is a simple calculator which will tell you whether that number is a "fizz", a "buzz" or a "fizzbuzz".  Simply input your number and hit the "Push Me" button.
+            </p>
+            </div>
+        </div>
+        <div class="mx-auto px6 py-4">
+        </div>
     
-    <input type="submit" value="Check" id="button" input class="bg-red hover:bg-red-dark rounded-full h-12 w-24 border border-purple-darker rounded">
-    <input type="text" id="value" input class = 'bg-red hover:bg-red-dark placeholder="Enter Number" rounded-full h-12 w-48 border border-purple-darker rounded'> 
-    <div id="display_answer" input class = "bg-red rounded-full h-12 w-1/2 border border-purple-darker rounded"></div>
+    <input type="submit" value="Push Me" id="button" input class="flex mx-auto border-b-4 border-purple border-solid items-center justify-center h-12 w-24 bg-red rounded-full text-center content-center">
+    <input type="text" placeholder="Number" id="value" input class ="flex mx-auto border-b-4 border-purple items-center justify-center h-12 w-24 bg-red rounded-full text-center"> 
+    <div id="display_answer" placeholder="Answer" input class = "flex mx-auto border-b-4 border-purple items-center justify-center h-24 w-48 bg-red rounded-full text-center"></div>
 
     <script src="js/fizz-buzz.js"></script>
         <script>
@@ -28,7 +41,5 @@
             })
         })
         </script>
-    <img src="./images/test_image.jpg" alt="No image" srcset="" width="2000" height="1500" class="w-full">
-
 </body>
 </html>
